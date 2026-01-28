@@ -186,6 +186,7 @@ async def get_stats():
 # Document Ingestion Endpoint
 # ============================================
 @app.post("/ingest", tags=["Documents"])
+@app.get("/ingest", tags=["Documents"])
 async def ingest_docs(request: IngestRequest = None):
     """
     Ingest PDF documents into the vector database.
