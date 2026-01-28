@@ -1,0 +1,35 @@
+# ============================================
+# AI Customer Support Agent - Dependencies
+# ============================================
+
+# Web Framework
+fastapi==0.109.0
+uvicorn==0.27.0
+gunicorn==21.2.0
+
+# LangChain for RAG pipeline
+langchain==0.1.0
+langchain-community==0.0.13
+langchain-groq==0.0.1
+
+# Embeddings (converts text to vectors)
+sentence-transformers==2.2.2
+
+# Vector Database Client
+qdrant-client==1.7.0
+
+# PDF Processing
+pypdf==3.17.4
+
+# MySQL Database
+sqlalchemy==2.0.25
+pymysql==1.1.0
+
+# Environment Variables
+python-dotenv==1.0.0
+
+# HTTP Requests (for Groq API)
+httpx==0.26.0
+
+# CORS support for frontend
+python-multipart==0.0.6

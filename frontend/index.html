@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Goel Electronics - Customer Support</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <!-- ================================ -->
+    <!-- HEADER -->
+    <!-- ================================ -->
+    <header>
+        <h1>
+            <span class="logo">🤖</span>
+            Goel Electronics Support
+        </h1>
+        <p>AI-powered support assistant • Get instant answers to your questions</p>
+    </header>
+
+    <!-- ================================ -->
+    <!-- MAIN CONTAINER -->
+    <!-- ================================ -->
+    <main>
+        <!-- Chat Container -->
+        <div id="chat-container">
+            <!-- Chat Header -->
+            <div class="chat-header">
+                <div class="status-dot"></div>
+                <h3>Support Bot</h3>
+                <span>• Online</span>
+            </div>
+
+            <!-- Chat Messages Area -->
+            <div id="chat-messages">
+                <!-- Welcome Message -->
+                <div class="message bot-message">
+                    <div class="message-avatar">🤖</div>
+                    <div class="message-content">
+                        <p>Hello! 👋 I'm your Goel Electronics support assistant. How can I help you today?</p>
+                        <p style="margin-top: 10px;">I can answer questions about:</p>
+                        <ul style="margin: 10px 0 0 20px;">
+                            <li>Refund & return policies</li>
+                            <li>Shipping & delivery</li>
+                            <li>Payment issues</li>
+                            <li>Account & login help</li>
+                            <li>Subscription plans</li>
+                        </ul>
+                        
+                        <!-- Quick Actions -->
+                        <div class="quick-actions">
+                            <button class="quick-action-btn" onclick="askQuestion('What is the refund policy?')">💰 Refund Policy</button>
+                            <button class="quick-action-btn" onclick="askQuestion('How long does shipping take?')">📦 Shipping Info</button>
+                            <button class="quick-action-btn" onclick="askQuestion('How do I reset my password?')">🔐 Password Help</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Input Area -->
+            <div id="input-area">
+                <input 
+                    type="text" 
+                    id="user-input" 
+                    placeholder="Type your question here..." 
+                    onkeypress="handleKeyPress(event)"
+                    autocomplete="off"
+                >
+                <button id="send-btn" onclick="sendMessage()">➤</button>
+            </div>
+        </div>
+
+        <!-- Ticket Lookup Section -->
+        <div id="ticket-section">
+            <h3>🎫 Track Your Ticket</h3>
+            <div id="ticket-lookup">
+                <input 
+                    type="text" 
+                    id="ticket-id-input" 
+                    placeholder="Enter ticket ID (e.g., TKT-00001)"
+                    onkeypress="handleTicketKeyPress(event)"
+                >
+                <button id="track-btn" onclick="lookupTicket()">
+                    🔍 Track
+                </button>
+            </div>
+            <div id="ticket-result"></div>
+        </div>
+    </main>
+
+    <!-- ================================ -->
+    <!-- FOOTER -->
+    <!-- ================================ -->
+    <footer>
+        <p>Goel Electronics © 2026 | Customer Support Portal</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="/static/script.js"></script>
+</body>
+</html>

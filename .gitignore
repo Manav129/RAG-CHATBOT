@@ -1,0 +1,36 @@
+# ============================================
+# Git Ignore File
+# ============================================
+# These files/folders will NOT be uploaded to GitHub
+
+# Environment variables (contains secrets!)
+.env
+
+# Python cache files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+venv/
+env/
+.venv/
+
+# IDE settings
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Qdrant local database
+qdrant_data/
+
+# Distribution files
+dist/
+build/
+*.egg-info/
