@@ -235,6 +235,7 @@ async def chat_endpoint(request: ChatRequest):
         
         # Auto-create ticket for complaints
         if response.get("should_create_ticket", False):
+            print(f"🎫 Creating ticket for complaint...")
             ticket_result = create_ticket(
                 customer_query=request.query,
                 ai_response=response.get("answer", ""),
@@ -244,9 +245,13 @@ async def chat_endpoint(request: ChatRequest):
                 category="complaint"
             )
             
+            print(f"Ticket creation result: {ticket_result}")
+            
             if ticket_result.get("success"):
                 ticket_id = ticket_result["ticket"]["ticket_id"]
                 ticket_created = True
+            else:
+                print(f"❌ Ticket creation failed: {ticket_result.get('error', 'Unknown error')}")
         
         return ChatResponse(
             query=request.query,
