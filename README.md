@@ -16,7 +16,7 @@ A modern AI-powered customer support system using **RAG (Retrieval Augmented Gen
 ### Backend
 - **FastAPI** - Modern Python web framework
 - **Groq LLM** - Fast AI inference (Llama 3.1 8B)
-- **Qdrant** - Vector database for semantic search
+- **Qdrant Cloud** - Vector database for semantic search
 - **MySQL** - Relational database for tickets
 - **SQLAlchemy** - Python ORM
 - **SentenceTransformers** - Text embeddings (all-MiniLM-L6-v2)
@@ -26,10 +26,8 @@ A modern AI-powered customer support system using **RAG (Retrieval Augmented Gen
 - **Modern UI** - Clean, professional design
 
 ### DevOps
-- **Docker** - Containerization
-- **Render** - Backend hosting
-- **Vercel** - Frontend hosting
-- **GitHub Actions** - CI/CD pipeline
+- **Docker** - Containerization (optional)
+- **Git/GitHub** - Version control
 
 ## 📁 Project Structure
 
@@ -244,15 +242,6 @@ POST /ingest
 | `QDRANT_API_KEY` | Qdrant API key (cloud) | Optional |
 | `QDRANT_COLLECTION` | Collection name | support_docs |
 | `ENVIRONMENT` | Environment mode | development |
-
-## 🚢 Deployment
-
-See **[DEPLOYMENT.md](DEPLOYMENT.md)** for complete deployment guide:
-
-- Deploy backend to **Render**
-- Deploy frontend to **Vercel**
-- Setup **GitHub Actions CI/CD**
-- Configure **Qdrant Cloud**
 
 ## 🧪 Testing
 
