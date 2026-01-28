@@ -25,10 +25,6 @@ A modern AI-powered customer support system using **RAG (Retrieval Augmented Gen
 - **HTML/CSS/JavaScript** - Vanilla, no frameworks
 - **Modern UI** - Clean, professional design
 
-### DevOps
-- **Docker** - Containerization (optional)
-- **Git/GitHub** - Version control
-
 ## 📁 Project Structure
 
 ```
@@ -140,27 +136,7 @@ Upload your PDFs to `data/docs/` then run:
 curl -X POST http://localhost:8001/ingest
 ```
 
-## 🐳 Docker Setup
-
-### Build Image
-
-```bash
-docker build -t ai-support-agent .
-```
-
-### Run Container
-
-```bash
-docker run -p 8001:8001 --env-file .env ai-support-agent
-```
-
-### Using Docker Compose
-
-```bash
-docker-compose up
-```
-
-## 📡 API Endpoints
+##  API Endpoints
 
 ### Chat
 ```http
