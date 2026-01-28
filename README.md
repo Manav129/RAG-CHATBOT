@@ -159,16 +159,9 @@ curl -X POST http://localhost:8001/ingest
    - Tickets stored in MySQL with SQLAlchemy ORM
    - Status tracking: open, in_progress, closed
 
-
-
-
-
-
 ## License
 
 This project is open source and available under the MIT License.
-
-
 
 ## Learning Resources
 
