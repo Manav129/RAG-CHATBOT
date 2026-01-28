@@ -1,5 +1,5 @@
 // ============================================
-// TechMart Customer Support - JavaScript
+// GOEL Electronics Customer Support - JavaScript
 // ============================================
 // Modern, clean implementation for the chat interface
 

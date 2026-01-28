@@ -48,7 +48,7 @@ def get_groq_client() -> Groq:
 # ============================================
 # This template tells the LLM how to behave and what to do
 
-RAG_PROMPT_TEMPLATE = """You are a helpful customer support assistant for TechMart Electronics.
+RAG_PROMPT_TEMPLATE = """You are a helpful customer support assistant for GOEL Electronics.
 Your job is to answer customer questions using ONLY the information provided in the context below.
 
 RULES:
@@ -250,7 +250,7 @@ if __name__ == "__main__":
             "score": 0.85
         },
         {
-            "text": "To request a refund, contact our support team at support@techmart.com or call 1-800-TECHMART. You will receive a Return Merchandise Authorization (RMA) number.",
+            "text": "To request a refund, contact our support team at support@goelelectronics.com or call 1-800-GOEL-ELEC. You will receive a Return Merchandise Authorization (RMA) number.",
             "source": "Refund_Policy.pdf",
             "score": 0.72
         }

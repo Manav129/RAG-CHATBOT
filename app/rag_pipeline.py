@@ -119,7 +119,7 @@ def chat(query: str, top_k: int = TOP_K_RESULTS) -> Dict:
     if not search_results:
         return {
             "query": query,
-            "answer": "I'm sorry, but I couldn't find any relevant information in our documentation. Please contact our support team at support@techmart.com for assistance.",
+            "answer": "I'm sorry, but I couldn't find any relevant information in our documentation. Please contact our support team at support@goelelectronics.com for assistance.",
             "citations": [],
             "is_complaint": False,
             "should_create_ticket": False

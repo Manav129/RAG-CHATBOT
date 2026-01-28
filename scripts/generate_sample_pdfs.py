@@ -44,10 +44,10 @@ def create_pdf(filename: str, title: str, content: str):
 # Document 1: Refund Policy
 # ============================================
 refund_policy = """
-REFUND POLICY - TechMart Electronics
+REFUND POLICY - GOEL Electronics
 
 1. GENERAL REFUND POLICY
-All products purchased from TechMart Electronics can be returned within 30 days of purchase for a full refund. The item must be in original packaging and unused condition.
+All products purchased from GOEL Electronics can be returned within 30 days of purchase for a full refund. The item must be in original packaging and unused condition.
 
 2. REFUND ELIGIBILITY
 - Products must be returned within 30 days of delivery
@@ -56,7 +56,7 @@ All products purchased from TechMart Electronics can be returned within 30 days 
 - Refunds are processed to the original payment method
 
 3. REFUND PROCESS
-Step 1: Contact our support team at support@techmart.com or call 1-800-TECHMART
+Step 1: Contact our support team at support@GOEL Electronics.com or call 1-800-GOEL Electronics
 Step 2: Provide your order number and reason for return
 Step 3: Receive a Return Merchandise Authorization (RMA) number
 Step 4: Ship the item back using the prepaid label we provide
@@ -74,14 +74,14 @@ If an item is returned with missing parts or damage, a partial refund may be iss
 6. LATE RETURNS
 Items returned after 30 days but within 60 days may be eligible for store credit only.
 
-For any refund-related questions, contact our Customer Support team at support@techmart.com or call 1-800-TECHMART (1-800-832-4627).
+For any refund-related questions, contact our Customer Support team at support@GOEL Electronics.com or call 1-800-GOEL Electronics (1-800-832-4627).
 """
 
 # ============================================
 # Document 2: Shipping & Delivery
 # ============================================
 shipping_delivery = """
-SHIPPING AND DELIVERY POLICY - TechMart Electronics
+SHIPPING AND DELIVERY POLICY - GOEL Electronics
 
 1. SHIPPING OPTIONS
 We offer the following shipping methods:
@@ -98,7 +98,7 @@ Once your order ships, you will receive an email with:
 - Tracking number
 - Carrier information (FedEx, UPS, or USPS)
 - Estimated delivery date
-You can also track your order at techmart.com/track
+You can also track your order at GOEL Electronics.com/track
 
 4. DELIVERY ISSUES
 If your package is:
@@ -116,14 +116,14 @@ We can ship to P.O. boxes for Standard Shipping only. Express and Next Day optio
 7. DELIVERY SIGNATURE
 Orders over $500 require signature confirmation for security.
 
-Contact shipping support: shipping@techmart.com or 1-800-TECHMART option 2.
+Contact shipping support: shipping@GOEL Electronics.com or 1-800-GOEL Electronics option 2.
 """
 
 # ============================================
 # Document 3: Payment Issues FAQ
 # ============================================
 payment_faq = """
-PAYMENT ISSUES FAQ - TechMart Electronics
+PAYMENT ISSUES FAQ - GOEL Electronics
 
 1. ACCEPTED PAYMENT METHODS
 We accept:
@@ -131,7 +131,7 @@ We accept:
 - Debit Cards with Visa/MasterCard logo
 - PayPal
 - Apple Pay and Google Pay
-- TechMart Gift Cards
+- GOEL Electronics Gift Cards
 - Affirm (Buy Now, Pay Later)
 
 2. PAYMENT DECLINED - COMMON REASONS
@@ -169,18 +169,18 @@ Check that:
 7. REFUND NOT RECEIVED
 Refunds take 5-7 business days to appear. Check with your bank if not received after 10 business days.
 
-Payment Support: payments@techmart.com or 1-800-TECHMART option 3.
+Payment Support: payments@GOEL Electronics.com or 1-800-GOEL Electronics option 3.
 """
 
 # ============================================
 # Document 4: Account & Login Help
 # ============================================
 account_help = """
-ACCOUNT AND LOGIN HELP - TechMart Electronics
+ACCOUNT AND LOGIN HELP - GOEL Electronics
 
 1. CREATING AN ACCOUNT
 To create an account:
-- Go to techmart.com/signup
+- Go to GOEL Electronics.com/signup
 - Enter your email address
 - Create a password (minimum 8 characters, include number and special character)
 - Verify your email by clicking the link we send
@@ -229,17 +229,17 @@ If you suspect unauthorized access:
 - Review recent orders for suspicious activity
 - Contact support to report the issue
 
-Account Support: accounts@techmart.com or 1-800-TECHMART option 4.
+Account Support: accounts@GOEL Electronics.com or 1-800-GOEL Electronics option 4.
 """
 
 # ============================================
 # Document 5: Subscription Plans
 # ============================================
 subscription_terms = """
-SUBSCRIPTION PLAN TERMS - TechMart Electronics
+SUBSCRIPTION PLAN TERMS - GOEL Electronics
 
-1. TECHMART PLUS MEMBERSHIP
-TechMart Plus is our premium membership program offering exclusive benefits.
+1. GOEL Electronics PLUS MEMBERSHIP
+GOEL Electronics Plus is our premium membership program offering exclusive benefits.
 
 MONTHLY PLAN: $9.99/month
 ANNUAL PLAN: $79.99/year (save $40!)
@@ -277,23 +277,23 @@ You can pause your membership for up to 3 months:
 - Benefits are suspended during pause
 
 7. STUDENT DISCOUNT
-Students get 50% off! Verify student status at techmart.com/student to get TechMart Plus for $4.99/month or $39.99/year.
+Students get 50% off! Verify student status at GOEL Electronics.com/student to get GOEL Electronics Plus for $4.99/month or $39.99/year.
 
-Subscription Support: membership@techmart.com or 1-800-TECHMART option 5.
+Subscription Support: membership@GOEL Electronics.com or 1-800-GOEL Electronics option 5.
 """
 
 # ============================================
 # Document 6: Support Escalation Guide
 # ============================================
 escalation_guide = """
-SUPPORT ESCALATION GUIDE - TechMart Electronics
+SUPPORT ESCALATION GUIDE - GOEL Electronics
 
 1. SUPPORT CHANNELS
 Contact us through:
-- Email: support@techmart.com (response within 24 hours)
-- Phone: 1-800-TECHMART (1-800-832-4627) - Mon-Fri 8AM-8PM EST
+- Email: support@GOEL Electronics.com (response within 24 hours)
+- Phone: 1-800-GOEL Electronics (1-800-832-4627) - Mon-Fri 8AM-8PM EST
 - Live Chat: Available on website 24/7
-- Social Media: @TechMartSupport on Twitter/X
+- Social Media: @GOEL ElectronicsSupport on Twitter/X
 
 2. SUPPORT TICKET SYSTEM
 When you contact us, a support ticket is created:
@@ -329,8 +329,8 @@ Simply say "I would like to escalate this issue" or:
 - Use ticket portal and click "Request Escalation"
 
 6. PRIORITY SUPPORT
-TechMart Plus members receive priority support:
-- Dedicated support line: 1-800-TECHMART option 9
+GOEL Electronics Plus members receive priority support:
+- Dedicated support line: 1-800-GOEL Electronics option 9
 - Faster response times (under 4 hours)
 - Direct access to Level 2 support
 
@@ -341,7 +341,7 @@ We take complaints seriously:
 - Resolution or update within 72 hours
 - Follow-up satisfaction survey sent after resolution
 
-Emergency Support (order issues within 24 hours of delivery): 1-800-TECHMART option 0.
+Emergency Support (order issues within 24 hours of delivery): 1-800-GOEL Electronics option 0.
 """
 
 # ============================================
@@ -352,13 +352,14 @@ if __name__ == "__main__":
     print("=" * 50)
     
     # Create each PDF
-    create_pdf("Refund_Policy.pdf", "TechMart Refund Policy", refund_policy)
-    create_pdf("Shipping_Delivery.pdf", "TechMart Shipping & Delivery", shipping_delivery)
-    create_pdf("Payment_Issues_FAQ.pdf", "TechMart Payment FAQ", payment_faq)
-    create_pdf("Account_Login_Help.pdf", "TechMart Account Help", account_help)
-    create_pdf("Subscription_Plan_Terms.pdf", "TechMart Subscription Terms", subscription_terms)
-    create_pdf("Support_Escalation_Guide.pdf", "TechMart Support Escalation", escalation_guide)
+    create_pdf("Refund_Policy.pdf", "GOEL Electronics Refund Policy", refund_policy)
+    create_pdf("Shipping_Delivery.pdf", "GOEL Electronics Shipping & Delivery", shipping_delivery)
+    create_pdf("Payment_Issues_FAQ.pdf", "GOEL Electronics Payment FAQ", payment_faq)
+    create_pdf("Account_Login_Help.pdf", "GOEL Electronics Account Help", account_help)
+    create_pdf("Subscription_Plan_Terms.pdf", "GOEL Electronics Subscription Terms", subscription_terms)
+    create_pdf("Support_Escalation_Guide.pdf", "GOEL Electronics Support Escalation", escalation_guide)
     
     print("=" * 50)
     print("All PDF documents created successfully!")
     print("Location: data/docs/")
+
