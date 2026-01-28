@@ -1,31 +1,31 @@
 # AI Customer Support Agent
 
-A modern AI-powered customer support system using **RAG (Retrieval Augmented Generation)** to answer questions from PDF documents and automatically create support tickets for complaints.
+A modern AI-powered customer support system using RAG (Retrieval Augmented Generation) to answer questions from PDF documents and automatically create support tickets for complaints.
 
-## 🎯 Features
+## Features
 
-- **Intelligent Q&A**: Answers customer questions using company documentation
-- **Citation System**: Provides source references for every answer
-- **Auto-Ticket Creation**: Detects complaints and creates support tickets automatically
-- **Ticket Management**: Track and update support tickets
-- **Modern UI**: Clean, responsive chat interface
-- **RAG Pipeline**: Combines Qdrant vector search with Groq LLM
+- Intelligent Q&A: Answers customer questions using company documentation
+- Citation System: Provides source references for every answer
+- Auto-Ticket Creation: Detects complaints and creates support tickets automatically
+- Ticket Management: Track and update support tickets
+- Modern UI: Clean, responsive chat interface
+- RAG Pipeline: Combines Qdrant vector search with Groq LLM
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 ### Backend
-- **FastAPI** - Modern Python web framework
-- **Groq LLM** - Fast AI inference (Llama 3.1 8B)
-- **Qdrant Cloud** - Vector database for semantic search
-- **MySQL** - Relational database for tickets
-- **SQLAlchemy** - Python ORM
-- **SentenceTransformers** - Text embeddings (all-MiniLM-L6-v2)
+- FastAPI - Modern Python web framework
+- Groq LLM - Fast AI inference (Llama 3.1 8B)
+- Qdrant Cloud - Vector database for semantic search
+- MySQL - Relational database for tickets
+- SQLAlchemy - Python ORM
+- SentenceTransformers - Text embeddings (all-MiniLM-L6-v2)
 
 ### Frontend
-- **HTML/CSS/JavaScript** - Vanilla, no frameworks
-- **Modern UI** - Clean, professional design
+- HTML/CSS/JavaScript - Vanilla, no frameworks
+- Modern UI - Clean, professional design
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 AI Customer Support Agent using RAG/
@@ -58,7 +58,7 @@ AI Customer Support Agent using RAG/
 └── README.md                  # This file
 ```
 
-## 🚀 Quick Start
+## Quick Start
 
 ### Prerequisites
 
@@ -107,8 +107,8 @@ QDRANT_URL=http://localhost:6333
 ```
 
 Get free API keys:
-- **Groq**: https://console.groq.com/keys
-- **Qdrant Cloud**: https://cloud.qdrant.io
+- Groq: https://console.groq.com/keys
+- Qdrant Cloud: https://cloud.qdrant.io
 
 ### 5. Setup MySQL Database
 
@@ -136,7 +136,7 @@ Upload your PDFs to `data/docs/` then run:
 curl -X POST http://localhost:8001/ingest
 ```
 
-##  API Endpoints
+## API Endpoints
 
 ### Chat
 ```http
@@ -178,29 +178,29 @@ GET /stats
 POST /ingest
 ```
 
-## 🎨 How It Works
+## How It Works
 
 ### RAG Pipeline
 
-1. **Document Ingestion**
+1. Document Ingestion
    - PDFs are split into chunks (500 chars)
    - Each chunk is converted to embeddings (384-dimensional vectors)
    - Embeddings stored in Qdrant vector database
 
-2. **Query Processing**
+2. Query Processing
    - User query is converted to embedding
    - Qdrant finds 3 most similar document chunks
-   - Retrieved documents + query sent to Groq LLM
+   - Retrieved documents and query sent to Groq LLM
 
-3. **Response Generation**
+3. Response Generation
    - LLM generates answer using only retrieved documents
    - Citations included for transparency
-   - If complaint detected → auto-create ticket
+   - If complaint detected, auto-create ticket
 
-4. **Ticket System**
+4. Ticket System
    - Complaints trigger automatic ticket creation
    - Tickets stored in MySQL with SQLAlchemy ORM
-   - Status tracking: open → in_progress → closed
+   - Status tracking: open, in_progress, closed
 
 ## 🔧 Configuration
 
@@ -219,7 +219,7 @@ POST /ingest
 | `QDRANT_COLLECTION` | Collection name | support_docs |
 | `ENVIRONMENT` | Environment mode | development |
 
-## 🧪 Testing
+## Testing
 
 ### Test Chat Endpoint
 
@@ -243,10 +243,10 @@ curl -X POST http://localhost:8001/chat \
 curl http://localhost:8001/health
 ```
 
-## 📊 Interview Questions
+## Interview Questions
 
 ### Why RAG over fine-tuning?
-RAG allows updating knowledge without retraining. Add new PDFs → instant updates. Fine-tuning is expensive and time-consuming.
+RAG allows updating knowledge without retraining. Add new PDFs and get instant updates. Fine-tuning is expensive and time-consuming.
 
 ### Why Qdrant?
 Fast vector similarity search, good Python SDK, free tier, and supports both local and cloud deployment.
@@ -258,7 +258,7 @@ ORM prevents SQL injection, makes code more Pythonic, easier to maintain than ra
 Free tier, extremely fast inference, good model quality (Llama 3.1 8B), simple API.
 
 ### How does complaint detection work?
-Keyword matching on strong negative words: frustrated, angry, terrible, broken, damaged. If found → auto-create ticket.
+Keyword matching on strong negative words: frustrated, angry, terrible, broken, damaged. If found, auto-create ticket.
 
 ### How are embeddings generated?
 Using SentenceTransformers model `all-MiniLM-L6-v2` which converts text to 384-dimensional vectors representing semantic meaning.
@@ -266,7 +266,7 @@ Using SentenceTransformers model `all-MiniLM-L6-v2` which converts text to 384-d
 ### What is chunking?
 Breaking documents into smaller pieces (500 chars) so retrieval is more precise. Overlap (50 chars) maintains context between chunks.
 
-## 🤝 Contributing
+## Contributing
 
 1. Fork the repository
 2. Create feature branch: `git checkout -b feature-name`
@@ -274,24 +274,24 @@ Breaking documents into smaller pieces (500 chars) so retrieval is more precise.
 4. Push to branch: `git push origin feature-name`
 5. Submit pull request
 
-## 📝 License
+## License
 
 This project is open source and available under the MIT License.
 
-## 🙋 Support
+## Support
 
 For deployment help, see [DEPLOYMENT.md](DEPLOYMENT.md)
 
 For issues, create a GitHub issue or contact the maintainer.
 
-## 🎓 Learning Resources
+## Learning Resources
 
-- **FastAPI**: https://fastapi.tiangolo.com
-- **Qdrant**: https://qdrant.tech/documentation
-- **Groq**: https://console.groq.com/docs
-- **SQLAlchemy**: https://docs.sqlalchemy.org
-- **RAG Tutorial**: https://www.pinecone.io/learn/retrieval-augmented-generation
+- FastAPI: https://fastapi.tiangolo.com
+- Qdrant: https://qdrant.tech/documentation
+- Groq: https://console.groq.com/docs
+- SQLAlchemy: https://docs.sqlalchemy.org
+- RAG Tutorial: https://www.pinecone.io/learn/retrieval-augmented-generation
 
 ---
 
-**Built with ❤️ using Python, FastAPI, and AI**
+Built with Python, FastAPI, and AI.
