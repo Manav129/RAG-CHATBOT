@@ -6,7 +6,7 @@
 // API base URL - dynamically set based on environment
 const API_URL = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1'
     ? "" // Same origin for local development
-    : "https://your-backend-url.onrender.com"; // Replace with your Render backend URL
+    : "https://ai-support-backend-3z5o.onrender.com"; // Render backend URL
 
 // ============================================
 // SEND MESSAGE FUNCTION
